@@ -3,7 +3,7 @@
 Simple app that adds a configurable upsell bump in the storefront checkout flow to help merchants offer a complimentary product and increase AOV. 
 
 
-> This app is an example and is meant to be a starting point for developers to fork and add their own custom logic multiple differen't upsell offer trigger options or any additional business logic necessary for a merchant's unqiue requirements. 
+> This app is an example and is meant to be a starting point for developers to fork and add their own custom logic such as multiple upsell offers, differen't trigger options, or any additional business logic necessary for a merchant's unqiue requirements. 
 
 
 ### How It Works
