@@ -1,0 +1,31 @@
+
+{% if request.path == '/checkout/shipping-address/' or request.path == '/checkout/' and app.settings.upsell_1_trigger_product_id and app.settings.upsell_1_product_id %}
+<style>
+    .button.button-upsell {
+        background: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        color: white;
+    }
+</style>
+<script type="text/javascript" src="{% app_asset_url 'assets/upsell.js' %}"></script> 
+<script>
+    let triggerProductId = {{ app.settings.upsell_1_trigger_product_id }};
+    let upsellProductID = {{ app.settings.upsell_1_product_id }};
+
+    let upsellItemData = [
+        {
+            'triggerProductId': triggerProductId, // if this product is in the cart show the upsell
+            'productPk': upsellProductID, // id of upsell product
+            'productQty': 1, // quantity of upsell
+            'subHeading': '{{ app.settings.upsell_1_product_description|default:"" }}', // some descriptive text
+            'discountValue': {{ app.settings.upsell_1_discount_value|default:0 }}, // discount value
+            'discountCoupon': '{{ app.settings.upsell_1_discount_coupon|default:"" }}', // discount coupon (optional)
+            'ctaText': 'Add to Cart'
+        }
+    ]
+
+document.addEventListener('DOMContentLoaded', function () {
+  showUpsell();
+});
+</script> 
+{% endif %}
