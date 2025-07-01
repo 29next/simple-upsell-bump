@@ -6,19 +6,19 @@
     },
     "settings_schema": [
         {
-            "name": "upsell_1_trigger_product_id",
+            "name": "upsell_trigger_product_id",
             "label": "Upsell Trigger Product ID",
             "type": "number",
             "help_text": "Product in the cart that triggers upsell offer, needs to be the parent product ID."
         },
         {
-            "name": "upsell_1_product_id",
+            "name": "upsell_product_id",
             "label": "Upsell Product ID",
             "type": "number",
             "help_text": "Product offered as upsell, needs to be the variant product ID."
         },
         {
-            "name": "upsell_1_product_description",
+            "name": "upsell_product_description",
             "label": "Upsell Product Description",
             "type": "text",
             "help_text": "Upsell description to make the upsell enticing.",
@@ -26,14 +26,14 @@
             "max_length": 250
         },
         {
-            "name": "upsell_1_discount_coupon",
+            "name": "upsell_discount_coupon",
             "label": "Upsell Discount Coupon",
             "type": "text",
             "help_text": "Optional - Coupon to apply when adding the upsell to give a discount.",
             "max_length": 100
         },
         {
-            "name": "upsell_1_discount_value",
+            "name": "upsell_discount_value",
             "label": "Upsell Discount Value",
             "type": "number",
             "help_text": "Optional - Discount value to show if they take the upsell offer, ie 20."
