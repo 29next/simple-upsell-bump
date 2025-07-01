@@ -18,7 +18,7 @@ App settings use the built in [App Form](https://developers.29next.com/docs/apps
 
 **Desktop**
 
-![Upsell Bump Desktop](/assets/desktop.jpg)
+![Upsell Bump Desktop](/assets/screenshots/desktop.jpg)
 
 **Mobile**
-![Upsell Bump Mobile](/assets/mobile.jpg)
+![Upsell Bump Mobile](/assets/screenshots/mobile.jpg)
